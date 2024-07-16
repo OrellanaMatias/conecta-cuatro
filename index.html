@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/resets.css">
+  <link rel="stylesheet" href="./assets/style.css">
+
+  <title>Orellana Matias</title>
+</head>
+<body>
+    <main>
+        <step-by-step class="content-centered menu-container" out-indicator="step-out">
+            <section class="menu column-container step uppercase" >
+                <div class="four-dots"></div>
+                <button class="btn elevated menu-option r-bg space-between" data-mode="cpu">
+                    Jugador vs CPU
+                    <span class="clip" data-clip="cpu"></span>
+                </button>
+                <button class="btn elevated menu-option y-bg space-between" data-mode="player">
+                    Jugador 1 vs Jugador 2
+                    <span class="clip" data-clip="player"></span>
+                </button>
+                <button class="btn elevated menu-option" data-mode="rules">¿Como se juega?</button>
+            </section>
+            <section class="step step-out rules h-shadow flow" >
+                <h2 class="h-l">Reglas del juegoo</h2>
+                <div class="rule-section">
+                    <h3 class="h-s">Objetivo</h3>
+                    <p>
+                    Ser el primer jugador en conectar 4 fichitas del mismo color en una
+                    fila (puede ser vertical, horizontal o diagonal).
+                    </p>
+                </div>
+                <div class="rule-section">
+                    <h3 class="h-s">Como se juega</h3>
+                    <ol class="counter-list">
+                        <li class="fluid-type">El rojo va primero en el primer juego.</li>
+                        <li class="fluid-type">
+                            Los jugadores deben jugar por turnos y solo deben soltar una fichita por turno.
+                        </li>
+                        <li class="fluid-type">
+                            El juego termina cuando hay 4 en raya o un punto muerto (no hay mas jugadas posibles).
+                        </li>
+                    </ol>
+                </div>
+                <button
+                    aria-label="a check icon indicating to confirm you're done reading the rules"
+                    class="r-bg rules-read elevated"
+                    data-mode="menu"
+                    >
+                    <span class="clip" data-clip="check"></span>
+                </button>
+            </section>
+            <section class="game uppercase step step-out" >
+                <div class="options space-between">
+                    <button class="btn game-option dark-purple-bg " data-mode="menu">MENU</button>
+                    <div class="four-dots"></div>
+                    <button class="btn game-option dark-purple-bg" data-option="restart">PAUSA</button>
+                </div>
+                <div class="score home-score elevated content-centered">
+                    <h3 class="h-s">Jugador 1</h3>
+                    <p class="fluid-type">0</p>
+                </div>
+                <div class="score away-score elevated content-centered" data-player="player 2">
+                    <h3 class="h-s">Jugador 2</h3>
+                    <p class="fluid-type">0</p>
+                </div>
+                <div class="content-centered game-wrapper">
+                    <div class="game-board h-shadow responsive-grid">
+                        <div class="indicator clip" data-clip="indicator"></div>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="1"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="2"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="3"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="4"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="5"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="6"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="7"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="8"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="9"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="10"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="11"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="12"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="13"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="14"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="15"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="16"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="17"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="18"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="19"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="20"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="21"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="22"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="23"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="24"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="25"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="26"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="27"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="28"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="29"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="30"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="31"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="32"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="33"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="34"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="35"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="36"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="37"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="38"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="39"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="40"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="41"></button>
+                        <button class="pawn" aria-label="a disc not yet selected" data-index="42"></button>
+                    </div>
+                    <div class="game-result content-centered" data-clip="result">
+                        <h3 class="h-s">Turno del jugador 1</h3>
+                        <p class="timeout">15s</p>
+                        <button class="btn game-option dark-purple-bg replay">Jugar otra vez</button>
+                    </div>
+                    <div class="decoration"></div>
+                </div>
+            </section>
+        </step-by-step>
+    </main>
+    <dialog class="column-container uppercase pause-menu h-shadow">
+        <h2 class="h-l">Pausa</h2>
+        <button class="btn elevated menu-option" data-option="continue">Continuar</button>
+        <button class="btn elevated menu-option"data-option="restart">Reiniciar</button>
+        <button class="btn elevated menu-option r-bg" data-option="quit">Volver al menu</button>
+    </dialog>
+    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+        <defs>
+        <clipPath id="result-path" clipPathUnits="objectBoundingBox">
+            <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="m 0.0044 0.3518 a 0.1327 0.1035 90 0 1 0.0634 -0.1223 h 0.002 l 0.3884 -0.2096 a 0.1327 0.1035 90 0 1 0.08 -0.0002 l 0.3932 0.2099 a 0.1327 0.1035 90 0 1 0.0637 0.1225 v 0.5086 c 0 0.0733 -0.0463 0.1327 -0.1035 0.1327 h -0.7816 c -0.0572 0 -0.1035 -0.0594 -0.1035 -0.1327 z"
+            ></path>
+        </clipPath>
+        <clipPath id="indicator" clipPathUnits="objectBoundingBox">
+            <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="m 0.1082 0.5353 c -0.0432 -0.0331 -0.0687 -0.0853 -0.0687 -0.1407 v -0.1786 c 0 -0.0969 0.0765 -0.1755 0.1709 -0.1755 h 0.5786 c 0.0944 0 0.1709 0.0786 0.1709 0.1755 v 0.1782 c 0 0.0557 -0.0258 0.1081 -0.0694 0.1412 l -0.2911 0.2207 c -0.0606 0.046 -0.1434 0.0457 -0.2038 -0.0005 l -0.2875 -0.2202 z"
+            />
+        </clipPath>
+        <clipPath id="check" clipPathUnits="objectBoundingBox">
+            <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="m 0.7967 0.3045 a 0.0315 0.0315 90 0 0 -0.0218 0.0101 l -0.3129 0.3406 l -0.1659 -0.1806 a 0.0315 0.0315 90 0 0 -0.0441 -0.0017 a 0.0315 0.0315 90 0 0 -0.0017 0.0445 l 0.189 0.2058 a 0.0315 0.0315 90 0 0 0.0462 0 l 0.336 -0.3654 a 0.0315 0.0315 90 0 0 -0.0017 -0.0445 a 0.0315 0.0315 90 0 0 -0.0227 -0.0084 z"
+            />
+        </clipPath>
+        <clipPath id="player-vs-cpu" clipPathUnits="objectBoundingBox">
+            <path d="m 0.708 0.0326 a 0.4663 0.2579 90 0 0 -0.2171 0.215 a 0.4665 0.258 90 1 0 0.0023 0.5091 a 0.4661 0.2578 90 0 0 0.4728 -0.2576 c 0 -0.2574 -0.1157 -0.4666 -0.258 -0.4666 z m 0 0.0651 c 0.1228 0 0.222 0.1795 0.222 0.4015 s -0.0992 0.4015 -0.222 0.4015 a 0.4008 0.2216 90 0 1 -0.1952 -0.2103 a 0.4639 0.2566 90 0 0 -0.0017 -0.3767 a 0.4008 0.2216 90 0 1 0.1969 -0.2159 z m -0.432 0.0063 c 0.1229 0 0.222 0.1792 0.222 0.4015 c 0 0.222 -0.0991 0.4015 -0.222 0.4015 a 0.401 0.2218 90 0 1 -0.222 -0.4015 c 0 -0.2222 0.0991 -0.4015 0.222 -0.4015 z m 0.347 0.209 v 0.0651 h 0.06 v -0.0651 h -0.06 z m 0.1099 0 v 0.0651 h 0.06 v -0.0651 h -0.06 z m -0.5225 0.0054 v 0.1081 h 0.036 v -0.1081 h -0.036 z m 0.1001 0 v 0.1081 h 0.036 v -0.1081 h -0.036 z m 0.2774 0.1211 v 0.0651 h 0.24 v -0.0651 h -0.24 z m -0.441 0.0208 a 0.2496 0.138 90 1 0 0.276 0 h -0.036 a 0.1845 0.102 90 1 1 -0.204 0 h -0.036 z"/>
+        </clipPath>
+        <clipPath id="player-vs-player" clipPathUnits="objectBoundingBox">
+            <path d="m 0.2804 0.0326 a 0.4678 0.2623 90 0 0 -0.2621 0.4674 a 0.4674 0.2621 90 0 0 0.4815 0.255 a 0.467 0.2618 90 0 0 0.4815 -0.255 a 0.4672 0.262 90 0 0 -0.4815 -0.255 a 0.4674 0.2621 90 0 0 -0.2194 -0.2124 z m 0 0.0652 c 0.1248 0 0.2255 0.1796 0.2255 0.4022 s -0.1007 0.4022 -0.2255 0.4022 a 0.4018 0.2253 90 0 1 -0.2255 -0.4022 c 0 -0.2226 0.1007 -0.4022 0.2255 -0.4022 z m 0.4388 0 c 0.1248 0 0.2255 0.1796 0.2255 0.4022 s -0.1007 0.4022 -0.2255 0.4022 c -0.0865 0 -0.1613 -0.0863 -0.1992 -0.2135 a 0.4646 0.2605 90 0 0 0 -0.3774 a 0.4015 0.2251 90 0 1 0.1992 -0.2135 z m -0.4343 0.2211 v 0.1083 h 0.0366 v -0.1083 h -0.0366 z m 0.1017 0 v 0.1083 h 0.0366 v -0.1083 h -0.0366 z m 0.3372 0 v 0.1083 h 0.0366 v -0.1083 h -0.0366 z m 0.1017 0 v 0.1083 h 0.0366 v -0.1083 h -0.0366 z m -0.6355 0.142 a 0.25 0.1402 90 1 0 0.2804 0 h -0.0366 a 0.1848 0.1036 90 1 1 -0.2072 0 h -0.0366 z m 0.4388 0 a 0.25 0.1402 90 1 0 0.2804 0 h -0.0366 a 0.1848 0.1036 90 1 1 -0.2072 0 h -0.0366 z"/>
+        </clipPath>
+        </defs>
+    </svg>
+    <script type="module" src="assets/game-play.js"></script>
+</body>
+</html>
